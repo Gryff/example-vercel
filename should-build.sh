@@ -7,7 +7,7 @@ if [[ "$PROJECT_TYPE" == "production" ]] && [[ "$CURRENT_PROJECT" == "production
   exit 1;
 fi
 
-if [[ "$PROJECT_TYPE" == "staging" ]] && [[ "$URRENT_PROJECT" == "staging" ]] && [[ "$VERCEL_GIT_COMMIT_REF" == "staging" ]] ; then
+if [[ "$PROJECT_TYPE" == "staging" ]] && [[ "$CURRENT_PROJECT" == "staging" ]] && [[ "$VERCEL_GIT_COMMIT_REF" == "staging" ]] ; then
   echo "✅ - STAGING BUILD can proceed"
   exit 1;
 fi
