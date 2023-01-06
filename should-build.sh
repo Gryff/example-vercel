@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eux
+
 if [[ "$PROJECT_TYPE" == "production" ]] && [[ "$CURRENT_PROJECT" == "production" ]] ; then
   echo "✅ - PRODUCTION Build can proceed"
   exit 1;
